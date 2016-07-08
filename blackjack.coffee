@@ -46,4 +46,3 @@ module.exports = class Blackjack
     runner: () ->
         this.welcome()
         this.displayCards(this.dealCard(), this.dealCard())
-        console.log(exports.unconvertedAces)
