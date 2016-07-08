@@ -14,7 +14,6 @@ module.exports = class Blackjack
         cards[Math.floor(Math.random()*cards.length)]
 
     displayCards: (card1, card2) ->
-        debugger;
         exports.unconvertedAces = true if card1 == 11 or card2 == 11
         if card1 != 11 and card2 != 11 then cardTotal = card1 + card2
         if card1 == 11 and card2 != 11 then cardTotal = (card1 + card2) + " or " + (1 + card2)
